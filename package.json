@@ -11,13 +11,13 @@
     "do",
     "cli"
   ],
-  "author": "Tri M. Nguyen",
+  "author": "Tri M. Nguyen & Aleksander Skraastad",
   "license": "MIT",
   "dependencies": {
     "commander": "2.3.0",
     "inquirer": "0.5.1",
     "request": "2.39.0",
-    "colors": "0.6.2"
+    "cli-color": "0.3.2"
   },
   "preferGlobal": true,
   "bin": {
