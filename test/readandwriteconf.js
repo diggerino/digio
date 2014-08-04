@@ -7,10 +7,14 @@ tools.load_conf(function (err, conf) {
     tools.debug('tools.js', 'load_conf', JSON.stringify(conf, null, 4))
 
     var new_key = "bca03c6b04bde731f2080d96c79cb54e1468a994b99c981c190dd6dc9ad9d503"
+    var new_name = "testkey"
+    var used = 0
 
-    if (!conf.keys.testkey) {
+    if (conf.names.indexOf('testkey') === -1) {
 
-        conf.keys.testkey = new_key
+        conf.keys.push(new_key)
+        conf.names.push(new_name)
+        conf.used = conf.names.indexOf('testkey')
 
         tools.write_conf(conf, function (err, data) {
             if (err) return tools.error('Unable to write to config file!')
