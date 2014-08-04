@@ -1,7 +1,6 @@
 var tools = require('../lib/tools')
 
-tools.print('Tihi')
-tools.print_table(['Tihi', 'hoho', 'haha'])
+tools.print_list(['Tihi', 'hoho', 'haha'])
 tools.success('So i guess you could say things are getting pretty serious...')
 tools.warning('Oioi!')
 tools.error('Oh shit.')
