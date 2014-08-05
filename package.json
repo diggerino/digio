@@ -12,6 +12,18 @@
     "cli"
   ],
   "author": "Tri M. Nguyen & Aleksander Skraastad",
+  "contributors": [
+    {
+      "name" : "Tri M. Nguyen",
+      "email" : "mail@trimn.net",
+      "url" : "http://tmn.io/"
+    },
+    {
+      "name" : "Aleksander Skraastad",
+      "email" : "aleks@overflow.no",
+      "url" : "http://overflow.no/"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "digio-api": "~0.1.2",
