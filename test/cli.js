@@ -7,9 +7,24 @@ var blabla = function (arg, arger, argest) {
 fjas.register(
     'domains',
     'create',
-    ['domain', 'ip'],
+    ['<domain>', '<ip>'],
     'Retrieves RateLimit information',
-    blabla)
+    blabla
+)
+fjas.register(
+    'actions',
+    'list',
+    [],
+    'List all actions',
+    blabla
+)
+fjas.register(
+    'domains',
+    'list',
+    [],
+    'List all domains',
+    blabla
+)
 fjas.version('0.0.1')
 
 fjas.parse()
