@@ -10,5 +10,6 @@ fjas.register(
     ['domain', 'ip'],
     'Retrieves RateLimit information',
     blabla)
+fjas.version('0.0.1')
 
 fjas.parse()
