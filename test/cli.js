@@ -1,7 +1,7 @@
 var fjas = require('../lib/cli')
 
-var blabla = function (arg, arger, argest) {
-    console.log(arg, arger, argest)
+var blabla = function (a,b,c,d,e,f,g,h,i,j,k,l) {
+    console.log(a,b,c,d,e,f,g,h,i,j,k,l)
 }
 
 fjas.register(
