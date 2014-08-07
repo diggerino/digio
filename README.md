@@ -45,7 +45,7 @@ digio extras rate                               // Display current RateLimit
 For arguments that contain whitespace, wrap the argument in quotation marks:
 
 ```
-digio keys create my_ssh_pubkey "ssh-rsa AbCz123 user@mail.org"  // Create a new ssh key
+digio keys create my_pubkey "ssh-rsa AbCz123 user@mail.org"  // Create a new ssh key
 ```
 
 ### Available modules
