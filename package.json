@@ -1,13 +1,17 @@
 {
   "name": "digio",
   "version": "0.0.0",
-  "description": "CLI for the DigitalOcean API v2",
+  "description": "Digio is a lightweight, robust command-line interface (CLI) built around the digio-api library. Digio is fully compatible with the DigitalOcean API v2.0, supporting all exposed API methods.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "digitalocean",
+    "digital ocean",
+    "api",
+    "v2.0",
+    "command-line interface",
     "do",
     "cli"
   ],
@@ -21,12 +25,12 @@
     {
       "name" : "Aleksander Skraastad",
       "email" : "aleks@overflow.no",
-      "url" : "http://overflow.no/"
+      "url" : "https://overflow.no/"
     }
   ],
   "license": "MIT",
   "dependencies": {
-    "digio-api": "<=0.1.3",
+    "digio-api": "~0.1.3",
     "request": "~2.39.0",
     "cli-color": "~0.3.2"
   },
