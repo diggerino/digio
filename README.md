@@ -7,22 +7,40 @@ digio
 ```
 
 ## Usage
-Run ```digio -h``` to view all the available commands
+Run ```digio help``` to view all the available modules. Run ```digio help <module>```
+to view all the available commands in a specific module.
 
-### Add key
+### API-keys
+Ease of access is managed through the ```apikeys``` module. To get started, simply
+add your API-key using the following command:
+
 ```
-digio addkey <name> <key>
+digio apikeys add <name> <key>
 ```
+
+When you add a new API-key, it will automatically be selected as primary. To change
+which key you will be using, list available keys with ```digio apikeys list``` and
+select the appropriate key with ```digio apikeys use <name>```
+
+If you wish to remove an API-key, simply use ```digio apikeys delete <name>```
+
+All API-keys are stored in a config file called ```.digio``` in your environments
+home directory, be it ```~/ or C:\Users\username\``` or similar. The location of the
+config file will be displayed the first time you run digio, and a default config file
+is created.
 
 ### Examples
 ```
-...
+digio domains create example.com 127.0.0.1      // Create a new domain
+digio droplets list                             // List all your droplets
+digio droplets reboot 123456                    // Reboot droplet with ID 123456
+digio extras rate                               // Display current RateLimit
 ```
-
 
 ### Available modules
 
 * actions
+* apikeys
 * domains
 * droplets
 * extras
