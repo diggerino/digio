@@ -42,6 +42,12 @@ digio droplets reboot 123456                    // Reboot droplet with ID 123456
 digio extras rate                               // Display current RateLimit
 ```
 
+For arguments that contain whitespace, wrap the argument in quotation marks:
+
+```
+digio keys create my_ssh_pubkey "ssh-rsa AbCz123 user@mail.org"  // Create a new ssh key
+```
+
 ### Available modules
 
 * actions
