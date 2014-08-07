@@ -3,6 +3,9 @@ digio
 ## Description
 Digio is a lightweight and robust command-line interface (CLI) built around the [digio-api](https://www.npmjs.org/package/digio-api) library. Digio is fully compatible with the DigitalOcean API v2.0, supporting all exposed API methods.
 
+For detailed description and requirements of the different command arguments, see the
+official DigitalOcean API v2.0 documentation at https://developers.digitalocean.com
+
 ## Installation
 ```
 ...
