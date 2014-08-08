@@ -16,18 +16,18 @@ Run ```digio help``` to view all the available modules. Run ```digio help <modul
 to view all the available commands in a specific module.
 
 ### API-keys
-Ease of access is managed through the ```apikeys``` module. To get started, simply
+Ease of access is managed through the ```apikey``` module. To get started, simply
 add your API-key using the following command:
 
 ```
-digio apikeys add <name> <key>
+digio apikey add <name> <key>
 ```
 
 When you add a new API-key, it will automatically be selected as primary. To change
 which key you will be using, list available keys with ```digio apikeys list``` and
 select the appropriate key with ```digio apikeys use <name>```
 
-If you wish to remove an API-key, simply use ```digio apikeys delete <name>```
+If you wish to remove an API-key, simply use ```digio apikey delete <name>```
 
 All API-keys are stored in a config file called ```.digio``` in your environments
 home directory, be it ```~/ or C:\Users\username\``` or similar. The location of the
@@ -81,7 +81,7 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 ### Available modules
 
 * actions
-* apikeys
+* apikey
 * domains
 * droplets
 * extras
@@ -90,6 +90,16 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 * regions
 * sizes
 
+### Changelog
+
+#### 1.0.2
+Small changes to the apikey module
+
+#### 1.0.1
+Bugfixes
+
+#### 1.0.0
+Initial release
 
 ## Licence
 
