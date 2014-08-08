@@ -1,6 +1,6 @@
 {
   "name": "digio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Digio is a lightweight, robust command-line interface (CLI) built around the digio-api library. Digio is fully compatible with the DigitalOcean API v2.0, supporting all exposed API methods.",
   "main": "index.js",
   "scripts": {
