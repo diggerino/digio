@@ -48,9 +48,9 @@ For arguments that contain whitespace, wrap the argument in quotation marks:
 digio keys create my_pubkey "ssh-rsa AbCz123 user@mail.org"  // Create a new ssh key
 ```
 
-Some API arguments are optiona, depending on what type of action is performed.
-An example is the creation of domain records. To exlude an argument, simply type "null"
-in the proper command location. Also keep in mind that strings are parsed strictly,
+Some API arguments are optional, depending on what type of action is performed.
+An example is the creation of domain records. To exclude an argument, simply type "null"
+in the proper argument location. Also keep in mind that strings are parsed strictly,
 meaning that for example an AAAA record cannot be entered in lowercase.
 
 ```
