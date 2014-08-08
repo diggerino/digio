@@ -8,7 +8,7 @@ official DigitalOcean API v2.0 documentation at https://developers.digitalocean.
 
 ## Installation
 ```
-...
+npm install digio
 ```
 
 ## Usage
