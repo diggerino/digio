@@ -57,6 +57,25 @@ meaning that for example an AAAA record cannot be entered in lowercase.
 digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 ```
 
+Some commands also have optional, many-valued arguments. For instance the create droplet
+command. Here, you can create a comma separated list that will be passed along as a single
+argument. In this command, the <ssh_keys> <backups> <ipv6> and <priv_net> are not required
+by the API, and can be set to null.
+
+```
+digio droplets create <name> <region> <size> <image> <ssh_keys> <backups> <ipv6> <priv_net>
+```
+
+Here is an example command that will create a droplet named 'droplet.com' on London 1,
+with a size of 512MB, using an image with ID 123456. Additionally it will inject
+your public keys with ID 987654 and fingerprint aa:bb:cc:dd:ee into authorized_keys.
+
+The example command also enables IPv6 and Private Networking, but does not enable backups.
+
+```
+digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null yes yes
+```
+
 ### Available modules
 
 * actions
