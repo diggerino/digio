@@ -41,13 +41,14 @@ digio droplets list                             // List all your droplets
 digio droplets reboot 123456                    // Reboot droplet with ID 123456
 digio extras rate                               // Display current RateLimit
 ```
-
+#### Whitespace in arguments
 For arguments that contain whitespace, wrap the argument in quotation marks:
 
 ```
 digio keys create my_pubkey "ssh-rsa AbCz123 user@mail.org"  // Create a new ssh key
 ```
 
+#### Optional arguments
 Some API arguments are optional, depending on what type of action is performed.
 An example is the creation of domain records. To exclude an argument, simply type "null"
 in the proper argument location. Also keep in mind that strings are parsed strictly,
@@ -57,7 +58,8 @@ meaning that for example an AAAA record cannot be entered in lowercase.
 digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 ```
 
-Some commands also have optional, many-valued arguments. For instance the create droplet
+### Arguments containing multiple values
+Some commands also have optional, multiple-valued arguments. For instance the create droplet
 command. Here, you can create a comma separated list that will be passed along as a single
 argument. In this command, the ```<ssh_keys> <backups> <ipv6> and <priv_net>```
 are not required by the API, and can be set to null.
