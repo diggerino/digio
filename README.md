@@ -54,7 +54,7 @@ in the proper argument location. Also keep in mind that strings are parsed stric
 meaning that for example an AAAA record cannot be entered in lowercase.
 
 ```
-digio domains createrecord example.com AAAA subdomain 127.0.0.1 null null null
+digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 ```
 
 ### Available modules
