@@ -1,5 +1,8 @@
 digio
 =====
+
+[![NPM module](https://img.shields.io/npm/v/digio.png)](https://www.npmjs.org/package/digio)
+
 ## Description
 Digio is a lightweight and robust command-line interface (CLI) built around the [digio-api](https://www.npmjs.org/package/digio-api) library and is written in NodeJS. Digio is fully compatible with the DigitalOcean API v2.0, supporting all exposed API methods.
 
@@ -16,18 +19,18 @@ Run ```digio help``` to view all the available modules. Run ```digio help <modul
 to view all the available commands in a specific module.
 
 ### API-keys
-Ease of access is managed through the ```apikey``` module. To get started, simply
+Ease of access is managed through the ```config``` module. To get started, simply
 add your API-key using the following command:
 
 ```
-digio apikey add <name> <key>
+digio config addkey <name> <key>
 ```
 
 When you add a new API-key, it will automatically be selected as primary. To change
-which key you will be using, list available keys with ```digio apikeys list``` and
-select the appropriate key with ```digio apikeys use <name>```
+which key you will be using, list available keys with ```digio config listkeys``` and
+select the appropriate key with ```digio config usekey <name>```
 
-If you wish to remove an API-key, simply use ```digio apikey delete <name>```
+If you wish to remove an API-key, simply use ```digio config deletekey <name>```
 
 All API-keys are stored in a config file called ```.digio``` in your environments
 home directory, be it ```~/ or C:\Users\username\``` or similar. The location of the
@@ -81,7 +84,7 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 ### Available modules
 
 * actions
-* apikey
+* config
 * domains
 * droplets
 * extras
@@ -92,11 +95,15 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 
 ### Changelog
 
+#### 1.0.4
+* Renamed ```apikey``` module to ```config```
+* Update README.md
+
 #### 1.0.3
 Fixed an issue causing modules not to be displayed on first run
 
 #### 1.0.2
-Small changes to the apikey module
+Small changes to the config module
 
 #### 1.0.1
 Bugfixes
