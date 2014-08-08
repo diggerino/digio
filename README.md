@@ -59,8 +59,8 @@ digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 
 Some commands also have optional, many-valued arguments. For instance the create droplet
 command. Here, you can create a comma separated list that will be passed along as a single
-argument. In this command, the <ssh_keys> <backups> <ipv6> and <priv_net> are not required
-by the API, and can be set to null.
+argument. In this command, the ```<ssh_keys> <backups> <ipv6> and <priv_net>```
+are not required by the API, and can be set to null.
 
 ```
 digio droplets create <name> <region> <size> <image> <ssh_keys> <backups> <ipv6> <priv_net>
