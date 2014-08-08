@@ -92,6 +92,9 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 
 ### Changelog
 
+#### 1.0.3
+Fixed an issue causing modules not to be displayed on first run
+
 #### 1.0.2
 Small changes to the apikey module
 
