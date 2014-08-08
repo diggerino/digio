@@ -58,7 +58,7 @@ meaning that for example an AAAA record cannot be entered in lowercase.
 digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 ```
 
-### Arguments containing multiple values
+#### Arguments containing multiple values
 Some commands also have optional, multiple-valued arguments. For instance the create droplet
 command. Here, you can create a comma separated list that will be passed along as a single
 argument. In this command, the ```<ssh_keys> <backups> <ipv6> and <priv_net>```
