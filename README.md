@@ -62,7 +62,7 @@ digio domains createrecord example.com A subdomain 127.0.0.1 null null null
 ```
 
 #### Arguments containing multiple values
-Some commands also have optional, multiple-valued arguments. For instance the create droplet
+Some commands also have multiple-valued arguments. For instance the create droplet
 command. Here, you can create a comma separated list that will be passed along as a single
 argument. In this command, the ```<ssh_keys> <backups> <ipv6> and <priv_net>```
 are not required by the API, and can be set to null.
