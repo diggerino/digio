@@ -95,6 +95,10 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 
 ### Changelog
 
+#### 1.0.5
+* Fix an error caused to a recent change in the JSON object returned by droplets.
+* Add new min_size field output for Image JSON objects.
+
 #### 1.0.4
 * Renamed ```apikey``` module to ```config```
 * Update README.md
