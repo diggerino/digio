@@ -95,9 +95,9 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 
 ## Release notes
 
-#### v1.0.5
-* Fix an error caused to a recent change in the JSON object returned by droplets.
-* Add new min_size field output for Image JSON objects.
+#### v1.0.6 (2014-11-27)
+* Fix: backup and IPv6 activated on *droplet create*
+* Fix: droplet create showing success on error
 
 [View past release notes](https://github.com/tmn/digio/wiki/Release-notes)
 
