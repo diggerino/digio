@@ -93,33 +93,19 @@ digio droplets create droplet.com lon1 512mb 123456 987654,aa:bb:cc:dd:ee null y
 * regions
 * sizes
 
-### Changelog
+## Release notes
 
-#### 1.0.5
+#### v1.0.5
 * Fix an error caused to a recent change in the JSON object returned by droplets.
 * Add new min_size field output for Image JSON objects.
 
-#### 1.0.4
-* Renamed ```apikey``` module to ```config```
-* Update README.md
-
-#### 1.0.3
-Fixed an issue causing modules not to be displayed on first run
-
-#### 1.0.2
-Small changes to the config module
-
-#### 1.0.1
-Bugfixes
-
-#### 1.0.0
-Initial release
+[View past release notes](https://github.com/tmn/digio/wiki/Release-notes)
 
 ## Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Tri M. Nguyen & Aleksander Skraastad
+Copyright (c) 2014 [Tri M. Nguyen](http://tmn.io/) & [Aleksander Skraastad](https://overflow.no/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
