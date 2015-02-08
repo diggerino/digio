@@ -2,7 +2,7 @@
   "name": "digio",
   "version": "1.0.6",
   "description": "Digio is a lightweight, robust command-line interface (CLI) built around the digio-api library. Digio is fully compatible with the DigitalOcean API v2.0, supporting all exposed API methods.",
-  "main": "index.js",
+  "main": "lib/digio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,12 +34,12 @@
   },
   "homepage": "https://github.com/tmn/digio",
   "dependencies": {
-    "digio-api": "~0.1.6",
-    "request": "~2.39.0",
-    "cli-color": "~0.3.2"
+    "digio-api": "^0.1.6",
+    "request": "^2.39.0",
+    "cli-color": "^0.3.2"
   },
   "preferGlobal": true,
   "bin": {
-    "digio": "index.js"
+    "digio": "lib/digio.js"
   }
 }
